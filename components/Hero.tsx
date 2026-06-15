@@ -9,7 +9,7 @@ export default function Hero() {
         src="/hero_bg_final_1.jpg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-center"
+        className="absolute inset-0 w-full h-full object-cover object-center hero-bg"
       />
 
       {/* Subtle dark overlay so text stays readable */}

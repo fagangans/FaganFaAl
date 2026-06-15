@@ -19,3 +19,23 @@ body {
   color: #1a1a1a;
   font-family: var(--font-inter), sans-serif;
 }
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  33% {
+    transform: scale(1.08) translate(-1.5%, 1%);
+  }
+  66% {
+    transform: scale(1.05) translate(1.5%, -1%);
+  }
+  100% {
+    transform: scale(1.1) translate(0%, 1.5%);
+  }
+}
+
+.hero-bg {
+  animation: kenburns 18s ease-in-out infinite alternate;
+  will-change: transform;
+}
