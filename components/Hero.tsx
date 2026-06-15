@@ -44,7 +44,7 @@ export default function Hero() {
   return (
     // Wrapper is taller than viewport — creates scroll space for video scrubbing
     // 100vh = pinned hero, extra 700px = scroll distance to drive 8s video
-    <div ref={wrapperRef} style={{ height: 'calc(100vh + 700px)' }}>
+    <div ref={wrapperRef} style={{ height: 'calc(100vh + 1400px)' }}>
       <section
         id="hero"
         className="sticky top-0 h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden"
