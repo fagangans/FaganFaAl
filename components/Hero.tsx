@@ -4,16 +4,22 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden"
     >
-      {/* Background photo — full cover */}
-      <img
-        src="/hero_bg_final_1.jpg"
-        alt=""
+      {/* Video background — autoplay, loop, muted (required for autoplay) */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/hero_bg_final_1.jpg"
+        className="absolute inset-0 w-full h-full object-cover object-center"
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-center hero-bg"
-      />
+      >
+        <source src="/hero-video.mp4" type="video/mp4" />
+        {/* Fallback: photo shows if video not supported or not uploaded yet */}
+      </video>
 
-      {/* Subtle dark overlay so text stays readable */}
-      <div className="absolute inset-0 bg-black/30" />
+      {/* Dark overlay so text stays readable */}
+      <div className="absolute inset-0 bg-black/35" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center">
