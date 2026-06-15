@@ -28,10 +28,11 @@ export default function About() {
   return (
     <section id="about" className="py-24 px-6 md:px-12 max-w-6xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-        {/* Left: photo placeholder */}
-        <div
-          className="w-full aspect-[4/5] bg-gray-400 grayscale rounded-sm"
-          aria-label="Photo placeholder"
+        {/* Left: photo */}
+        <img
+          src="/hero_bg_final_1.jpg"
+          alt="Fabian"
+          className="w-full aspect-[4/5] object-cover grayscale rounded-sm"
         />
 
         {/* Right: content */}
