@@ -28,12 +28,8 @@ export default function About() {
   return (
     <section id="about" className="py-24 px-6 md:px-12 max-w-6xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-        {/* Left: photo */}
-        <img
-          src="/hero_bg_final_1.jpg"
-          alt="Fabian"
-          className="w-full aspect-[4/5] object-cover grayscale rounded-sm"
-        />
+        {/* Left: photo placeholder — replace src with your portrait photo */}
+        <div className="w-full aspect-[4/5] bg-stone-300 rounded-sm" />
 
         {/* Right: content */}
         <div className="space-y-8">
